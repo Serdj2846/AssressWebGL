@@ -1,0 +1,39 @@
+/* var screen = document.querySelector('.screen-container');
+var lesson = 1;
+
+var image1 = document.createElement('button');
+image1.classList.add('buttonGame');
+var image2 = document.createElement('button');
+image2.classList.add('buttonGame');
+var button1 = document.querySelector('.button1');
+
+
+
+if (lesson === 1) {
+  while (screen.firstChild) { screen.removeChild(screen.firstChild);}
+  screen.appendChild(image1);
+  screen.appendChild(image2);
+  image1.style.backgroundImage = 'url(img/lesson1/1.jpg)';
+  image2.style.backgroundImage = 'url(img/lesson1/2.jpg)';
+}
+
+button1.addEventListener('click', function() {
+  console.log('Кнопка "Играю" нажата');
+  playAudio();
+});
+
+function playAudio() {
+  const audioElement = new Audio('audio/lesson1/1.ogg');
+  audioElement.play();
+}
+
+
+
+
+
+
+// Сохранение
+var currentNumber = localStorage.getItem('myNumberKey');
+var newNumber = currentNumber ? parseInt(currentNumber, 10) + 1 : 1;
+localStorage.setItem('myNumberKey', newNumber);
+console.log(newNumber); */

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your WebGL App</title>
+    <link rel="stylesheet" type="text/css" href="css/gamebox.css">
+</head>
+
+</head>
+<body>
+    <div class="frame-container">
+        <div class="p-container">
+            <p class="p1">Упражнение 1</p>
+            <p class="p2">Музыкальные инструменты</p>
+        </div>
+        <div class="game-container">
+            <div class="screen-container"></div>
+            <div class="button-container">
+                <button class="playBttn0">Прослушать заново</button>
+                <button class="playBttn1">Слушаю</button>
+                <p class="p-progress">Прогресс:</p>
+                <div class="smile-container"></div>
+            </div>
+        </div>
+        <div class="smile-container-background"></div>
+        <div></div>
+    </div>
+
+    <script src="js/loader.js"></script>
+    
+    <script>
+        playBttn0.disabled = true;
+        playBttn1.disabled = false;
+        training = true;
+
+        playBttn0.addEventListener('click', function() {
+            playBttn0.disabled = true;
+            play();
+        });
+
+        playBttn1.addEventListener('click', function() {
+            playBttn1.disabled = true;
+
+            if (training) {
+                listen();
+            } else {
+                play();
+            }
+        });
+
+        progress = Array(6).fill(0);
+        console.log(progress);
+
+        allPairs[0] = [0, 1];
+        allPairs[1] = [0, 2];
+        allPairs[2] = [1, 3];
+        allPairs[3] = [5, 3];
+        allPairs[4] = [2, 4];
+        allPairs[5] = [5, 4];
+
+        choosePair();
+    </script>
+
+</body>
+</html>
