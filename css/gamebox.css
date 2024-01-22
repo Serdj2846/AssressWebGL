@@ -30,6 +30,8 @@ body, html {
   height: 100vh;
   border: 1px solid rgb(120, 120, 120);
   border-radius: 10px;
+  background-color: rgba(220, 220, 220, 0.5); 
+  border: 1px solid rgba(120, 120, 120, 0.5);
 }
 
 .button {
