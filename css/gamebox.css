@@ -1,0 +1,221 @@
+body, html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0);
+}
+
+@font-face {
+  font-family: 'Caveat-Regular';
+  src: url('../fonts/Caveat-Regular.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Vasek';
+  src: url('../fonts/Vasek.ttf') format('truetype');
+}
+
+.frame-container {
+  font-family: "Calibri", sans-serif;
+  font-style: normal;
+  line-height: normal;
+  box-sizing: border-box;
+  background-color: rgb(220, 220, 220);
+  background-size: cover;
+  padding-left: 2%;
+  padding-right: 2%;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid rgb(120, 120, 120);
+  border-radius: 10px;
+  background-color: rgba(220, 220, 220, 0.5); 
+  border: 1px solid rgba(120, 120, 120, 0.5);
+}
+
+.button {
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-image: url('../img/full.png');
+  background-color: transparent;
+  background-size: cover;
+  border: none;
+  cursor: pointer;
+}
+
+
+.p-container {
+  box-sizing: border-box;
+  width: 100%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+#p1 {
+  font-size: 3vh;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+
+#p2 {
+  font-size: 2vh;
+  color: rgb(0, 0, 0);
+  margin: 0;
+  padding: 0;
+}
+
+.game-container {
+  box-sizing: border-box;
+  background-color: rgb(200, 200, 200);
+  border-radius: 10px;
+  overflow: hidden;
+  width: 100%;
+  height: 82%;
+  border: 1px solid rgb(120, 120, 120);
+  border-radius: 10px;
+}
+
+.screen-container {
+  box-sizing: border-box;
+  background-color: rgb(200, 200, 200);
+  overflow: hidden;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center; 
+  justify-content: center;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bigBttn {
+  aspect-ratio: 1 / 1;
+  height: 40%;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  padding: 0;
+  overflow: hidden;
+  transition: transform 0.2s;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 5%;
+  margin-top: 15%;  
+  position: relative;
+  overflow: hidden;
+  filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.5));
+}
+.bigBttn:active,
+.bigBttn:disabled {
+  transform: scale(0.95); 
+}
+
+.button-container {
+  font-size: 3vh;
+  box-sizing: border-box;
+  background-color: rgb(220, 220, 220);
+  overflow: hidden;
+  width: 100%;
+  height: 10%;
+  border-top: 1px solid rgb(120, 120, 120);
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.button-container > * {
+  flex: 1;
+  margin: 0 5px;
+}
+
+.playBttn0 {
+  font-size: 2.5vh;
+  box-sizing: border-box;
+  background-color: rgb(220, 220, 220);
+  overflow: hidden;
+  aspect-ratio: 4 / 1;
+  height: 80%;
+  border: 1px solid rgb(120, 120, 120);
+  border-radius: 10px;
+  margin-left: 2%;
+  margin-right: 0%;
+  flex: 0 0 20%;
+  max-width: 20%;
+  cursor: pointer;
+  object-fit: cover;
+}
+.playBttn1:disabled {
+  cursor: default;
+}
+
+.playBttn1 {
+  font-size: 2.5vh;
+  box-sizing: border-box;
+  background-color: rgb(220, 220, 220);
+  overflow: hidden;
+  aspect-ratio: 4 / 1;
+  height: 80%;
+  border: 1px solid rgb(120, 120, 120);
+  border-radius: 10px;
+  margin-left: 2%;
+  margin-right: 0%;
+  flex: 0 0 20%;
+  max-width: 20%;
+  cursor: pointer;
+  object-fit: cover;
+}
+.playBttn1:disabled {
+  cursor: default;
+}
+
+.p-progress {
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 15%; 
+}
+
+.smile-container-background {
+  box-sizing: border-box;
+  background-color: rgb(220, 220, 220);
+  padding-top: 1%;
+  padding-bottom: 1%;
+  width: 100%;
+  height: 5%;
+  background-image: url('../smiles/0.jpg');
+  background-size:cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-top: 1%;
+  padding-bottom: 1%;
+}
+
+.smile-container {
+  box-sizing: border-box;
+  background-color: rgb(220, 220, 220);
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-right: 5%;
+}
+
+.smiley {
+  font-size: 2vh;
+  cursor: default;
+  opacity: 1;
+  margin: 1%;
+}
