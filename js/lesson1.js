@@ -61,12 +61,7 @@ for (let i = 0; i < bigBttn.length; i++) {
   playBttn1.addEventListener('click', function() {
   playBttn1.disabled = true;
   if (win == true) {
-    if (currentScript) {
-      document.head.removeChild(currentScript);
-    }
-    currentScript = loadScript(lesson2, function () {
-    });
-    win = false;
+    alert('Переход к упражнению 2');
     return;
   }
   
