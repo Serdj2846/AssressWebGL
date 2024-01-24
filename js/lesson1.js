@@ -1,6 +1,5 @@
 item = 6;
-progress = Array(item).fill(3);
-progress[2] = 2;
+progress = Array(item).fill(0);
 
 title('Упражнение 1', 'Музыкальные инструменты');
 playBttn0.textContent = "Прослушать заново";
